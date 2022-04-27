@@ -5,9 +5,9 @@ import Cartcontext from "../../store/Cartcontext";
 import CartItem from "./CartItem";
 const Cart = (props) => {
   const orders = useContext(Cartcontext);
-  console.log("thats the orders : ", orders);
   const countItem = orders.items.length > 0;
   const cartItemRemoveHandler = (id) => {
+    console.log(id);
     orders.removeItem(id);
   };
   const cartItemAddHandler = (item) => {
