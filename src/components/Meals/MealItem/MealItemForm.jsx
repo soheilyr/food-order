@@ -18,7 +18,6 @@ const MealItemForm = (props) => {
       return;
     }
     props.onAddToCart(enterdedAmountNumber);
-    console.log(enteredAmount);
   };
   return (
     <form className={styles.form}>
@@ -29,8 +28,8 @@ const MealItemForm = (props) => {
           type: "number",
           id: "amount",
           min: "1",
-          max: "8",
-          step: "5",
+          max: "5",
+          step: "1",
           defaultValue: "1",
         }}
       />
